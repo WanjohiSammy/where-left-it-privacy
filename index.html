@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy policy for Where Left It, a private offline inventory app for Android.">
+  <meta name="theme-color" content="#17483d">
+  <title>Privacy Policy | Where Left It</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --forest: #17483d;
+      --forest-deep: #10352d;
+      --forest-soft: #dce9e4;
+      --saffron: #f4c95d;
+      --saffron-soft: #fff2c7;
+      --paper: #fffdf7;
+      --white: #ffffff;
+      --ink: #17221f;
+      --muted: #596763;
+      --line: #d8dfdc;
+      --content: 1120px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 24px;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background-color: var(--paper);
+      background-image: radial-gradient(circle at 1px 1px, rgba(23, 72, 61, .09) 1px, transparent 0);
+      background-size: 24px 24px;
+      font-family: Avenir, "Avenir Next", "Helvetica Neue", sans-serif;
+      font-size: 17px;
+      line-height: 1.7;
+    }
+
+    a { color: var(--forest); }
+
+    a:focus-visible {
+      outline: 3px solid var(--saffron);
+      outline-offset: 4px;
+      border-radius: 2px;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      color: var(--white);
+      background: var(--forest);
+      border-bottom: 8px solid var(--saffron);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      right: -80px;
+      bottom: -190px;
+      width: 430px;
+      height: 430px;
+      border: 70px solid rgba(244, 201, 93, .13);
+      border-radius: 50%;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 1;
+      width: min(calc(100% - 40px), var(--content));
+      margin: 0 auto;
+      padding: 72px 0 64px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 48px;
+      color: var(--white);
+      font-size: 18px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .brand-mark {
+      position: relative;
+      width: 38px;
+      height: 38px;
+      flex: 0 0 38px;
+      background: var(--saffron);
+      border-radius: 50% 50% 50% 12px;
+      transform: rotate(-45deg);
+    }
+
+    .brand-mark::after {
+      content: "";
+      position: absolute;
+      inset: 11px;
+      background: var(--forest);
+      border-radius: 3px;
+    }
+
+    .brand-name { letter-spacing: 0; }
+
+    .eyebrow {
+      margin: 0 0 10px;
+      color: var(--saffron);
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 720px;
+      margin: 0;
+      font-size: clamp(42px, 7vw, 76px);
+      line-height: 1.02;
+      letter-spacing: 0;
+    }
+
+    .hero-summary {
+      max-width: 680px;
+      margin: 24px 0 0;
+      color: #e8f0ed;
+      font-size: 20px;
+      line-height: 1.55;
+    }
+
+    .effective {
+      display: inline-block;
+      margin-top: 28px;
+      padding: 7px 12px;
+      color: var(--forest-deep);
+      background: var(--saffron);
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    main {
+      width: min(calc(100% - 40px), var(--content));
+      margin: 0 auto;
+      padding: 56px 0 88px;
+    }
+
+    .promise-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-bottom: 56px;
+    }
+
+    .promise {
+      padding: 24px;
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: 0 8px 24px rgba(16, 53, 45, .06);
+    }
+
+    .promise strong {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--forest);
+      font-size: 19px;
+    }
+
+    .promise p { margin: 0; color: var(--muted); }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 240px minmax(0, 1fr);
+      gap: 64px;
+      align-items: start;
+    }
+
+    nav {
+      position: sticky;
+      top: 24px;
+      padding-left: 18px;
+      border-left: 3px solid var(--saffron);
+    }
+
+    nav strong {
+      display: block;
+      margin-bottom: 10px;
+      color: var(--forest);
+      font-size: 14px;
+      text-transform: uppercase;
+    }
+
+    nav a {
+      display: block;
+      padding: 5px 0;
+      color: var(--muted);
+      font-size: 15px;
+      text-decoration: none;
+    }
+
+    nav a:hover { color: var(--forest); text-decoration: underline; }
+
+    article { min-width: 0; }
+
+    section {
+      padding: 0 0 42px;
+      margin-bottom: 42px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    section:last-child { margin-bottom: 0; border-bottom: 0; }
+
+    h2 {
+      margin: 0 0 16px;
+      color: var(--forest);
+      font-size: 30px;
+      line-height: 1.2;
+      letter-spacing: 0;
+    }
+
+    h3 {
+      margin: 28px 0 8px;
+      color: var(--ink);
+      font-size: 20px;
+      letter-spacing: 0;
+    }
+
+    p { margin: 0 0 16px; }
+    p:last-child { margin-bottom: 0; }
+
+    ul { padding-left: 22px; margin: 12px 0 18px; }
+    li { padding-left: 5px; margin: 5px 0; }
+    li::marker { color: var(--forest); }
+
+    .notice {
+      margin: 24px 0;
+      padding: 20px 22px;
+      background: var(--saffron-soft);
+      border-left: 4px solid var(--saffron);
+      border-radius: 0 6px 6px 0;
+    }
+
+    .notice strong { color: var(--forest-deep); }
+
+    footer {
+      color: #dce9e4;
+      background: var(--forest-deep);
+    }
+
+    .footer-inner {
+      width: min(calc(100% - 40px), var(--content));
+      margin: 0 auto;
+      padding: 30px 0;
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      font-size: 14px;
+    }
+
+    footer a { color: var(--saffron); }
+
+    @media (max-width: 800px) {
+      .hero-inner { padding: 48px 0 46px; }
+      .brand { margin-bottom: 36px; }
+      .promise-grid { grid-template-columns: 1fr; }
+      .layout { grid-template-columns: 1fr; gap: 38px; }
+      nav { position: static; columns: 2; }
+      nav strong { column-span: all; }
+    }
+
+    @media (max-width: 520px) {
+      body { font-size: 16px; }
+      .hero-inner, main, .footer-inner { width: min(calc(100% - 28px), var(--content)); }
+      .hero-summary { font-size: 18px; }
+      nav { columns: 1; }
+      h2 { font-size: 26px; }
+      .footer-inner { display: block; }
+      .footer-inner span { display: block; margin-top: 4px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+    @media print {
+      body { background: white; font-size: 11pt; }
+      .hero { color: black; background: white; border-bottom: 2px solid black; }
+      .hero::after, nav, .promise-grid { display: none; }
+      .hero-inner, main { width: 100%; padding: 24px 0; }
+      .brand, .eyebrow, .hero-summary { color: black; }
+      .effective { padding: 0; background: none; }
+      .layout { display: block; }
+      section { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <a class="brand" href="#top" aria-label="Where Left It privacy policy home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-name">Where Left It</span>
+      </a>
+      <p class="eyebrow">Your data stays yours</p>
+      <h1 id="top">Privacy policy</h1>
+      <p class="hero-summary">Where Left It is built to remember your belongings without sending your inventory to us. No account, no ads, and no analytics.</p>
+      <span class="effective">Effective October 7, 2026</span>
+    </div>
+  </header>
+
+  <main>
+    <div class="promise-grid" aria-label="Privacy highlights">
+      <div class="promise">
+        <strong>Offline by design</strong>
+        <p>Inventory search and organization happen on your device.</p>
+      </div>
+      <div class="promise">
+        <strong>No tracking</strong>
+        <p>No advertising, analytics, accounts, or developer-operated cloud.</p>
+      </div>
+      <div class="promise">
+        <strong>You stay in control</strong>
+        <p>You decide what to record, export, and delete.</p>
+      </div>
+    </div>
+
+    <div class="layout">
+      <nav aria-label="Policy sections">
+        <strong>On this page</strong>
+        <a href="#overview">Overview</a>
+        <a href="#stored-data">Data stored</a>
+        <a href="#permissions">Permissions</a>
+        <a href="#photos">Photos</a>
+        <a href="#export">Export</a>
+        <a href="#backup">Android backup</a>
+        <a href="#third-parties">Third parties</a>
+        <a href="#deletion">Deletion</a>
+        <a href="#children">Children</a>
+        <a href="#changes">Policy changes</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <article>
+        <section id="overview">
+          <h2>Overview</h2>
+          <p>This privacy policy explains how the Android application <strong>Where Left It</strong> handles information. The app is a private, offline household inventory designed to help you remember where physical belongings are stored.</p>
+          <p>We do not collect, receive, sell, rent, or share your inventory data. The app does not require an account and does not connect to a developer-operated server.</p>
+        </section>
+
+        <section id="stored-data">
+          <h2>Data stored on your device</h2>
+          <p>The app stores information you enter or create, including:</p>
+          <ul>
+            <li>Item names and physical storage locations</li>
+            <li>Categories, optional purchase dates, and notes</li>
+            <li>Creation timestamps</li>
+            <li>Optional item photographs and references to those photographs</li>
+            <li>Theme mode, color palette, and Material You preferences</li>
+          </ul>
+          <p>Inventory records are stored in the app's private SQLite database. Photographs are stored in the app's private files directory, and appearance settings are stored in private app preferences. Other apps cannot ordinarily browse these locations.</p>
+          <p>Search, filtering, categorization, and CSV generation are performed locally on your device.</p>
+        </section>
+
+        <section id="permissions">
+          <h2>Permissions and access</h2>
+          <p>Where Left It does not request internet, camera, photo-library, media, location, contacts, or broad storage permissions.</p>
+          <p>The app declares camera hardware as optional so it can offer photo capture on supported devices without making a camera a requirement for installation or use.</p>
+        </section>
+
+        <section id="photos">
+          <h2>Photo capture</h2>
+          <p>When you choose to take an item photo, the app opens an installed camera application using Android's activity result system. It grants that camera application temporary access to one app-owned destination through Android's secure <code>FileProvider</code>.</p>
+          <p>This delegated process does not require Where Left It to request camera or photo-library permission. Cancelling photo capture removes the unused destination file.</p>
+        </section>
+
+        <section id="export">
+          <h2>Inventory export</h2>
+          <p>Export happens only when you initiate it. Android's document picker lets you choose where the CSV file is saved, including local storage or a document provider available on your device.</p>
+          <p>An export can contain item names, locations, categories, purchase dates, notes, and app-local photo references. It does not embed the photograph files themselves.</p>
+          <div class="notice"><strong>Once exported, the CSV is outside the app's private storage.</strong> You are responsible for choosing a suitable destination and handling the file according to the sensitivity of your inventory information.</div>
+        </section>
+
+        <section id="backup">
+          <h2>Android backup</h2>
+          <p>The app currently allows Android backup. Depending on your device settings and platform account, Android may back up or restore app data. Those backups are controlled by your device platform and account provider, not by Where Left It or its developer.</p>
+        </section>
+
+        <section id="third-parties">
+          <h2>Third-party services and links</h2>
+          <p>The app contains no advertising, analytics, crash-reporting, authentication, or cloud-database SDKs.</p>
+          <p>If you select <strong>Buy Me a Coffee</strong> from the More menu, the app opens an external support page in your browser. No inventory data is included in that link. Your browser and the external website apply their own privacy policies and may process ordinary web-request information.</p>
+        </section>
+
+        <section id="deletion">
+          <h2>Retention and deletion</h2>
+          <p>Your information remains on your device until you delete it, clear the app's storage, or uninstall the app, subject to any copies retained through Android backup or files you have exported.</p>
+          <p>Deleting an item removes its database record and attempts to remove its associated app-owned photograph. Deleting a category does not delete its items; those items move to the built-in <strong>Other</strong> category.</p>
+        </section>
+
+        <section id="children">
+          <h2>Children's privacy</h2>
+          <p>Where Left It is a general-audience utility and is not directed specifically to children. Because the app has no account, advertising, analytics, or developer-operated online service, we do not knowingly collect personal information from children.</p>
+        </section>
+
+        <section id="changes">
+          <h2>Changes to this policy</h2>
+          <p>This policy may be updated if the app's features or data practices change. The effective date at the top of this page will identify the latest revision. Material changes will be reflected in the app listing or release information where appropriate.</p>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <strong>Where Left It</strong>
+      <span>Private inventory, kept on your device.</span>
+    </div>
+  </footer>
+</body>
+</html>
